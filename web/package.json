@@ -9,7 +9,8 @@
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "db": "prisma migrate dev && prisma generate"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
@@ -38,6 +39,7 @@
     "globals": "^17.2.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
-    "vite": "^7.3.2"
+    "vite": "^7.3.2",
+    "prisma": "^6.0.0"
   }
 }
