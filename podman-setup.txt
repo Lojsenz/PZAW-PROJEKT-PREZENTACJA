@@ -1,0 +1,8 @@
+podman run -d \
+  --name pzaw-postgres \
+  -e POSTGRES_USER=pzaw \
+  -e POSTGRES_PASSWORD=pzaw \
+  -e POSTGRES_DB=blog \
+  -p 5433:5432 \
+  -v pzaw-pgdata:/var/lib/postgresql/data \
+  docker.io/library/postgres:16
