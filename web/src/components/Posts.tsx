@@ -85,7 +85,6 @@ export function Posts() {
                     ))
                 ) : posts.length === 0 ? (
                     <div className="flex flex-col items-center justify-center py-24 text-center gap-3">
-                        <p className="text-4xl">📝</p>
                         <p className="text-lg font-medium">No posts yet</p>
                         <p className="text-sm text-muted-foreground">You haven't written anything. When you do, it'll show up here.</p>
                         <Button className="mt-2" onClick={() => setOpen(true)}>Create your first post</Button>
