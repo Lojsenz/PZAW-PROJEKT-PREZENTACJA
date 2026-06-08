@@ -12,7 +12,7 @@ Aplikacja blogowa z podziałem na role (użytkownik / administrator)
   - lista użytkowników i zmiana ich roli,
   - usuwanie dowolnych wpisów.
 
-## Stos technologiczny
+## Technologie
 
 | Warstwa  | Technologie |
 |----------|-------------|
@@ -43,7 +43,6 @@ DATABASE_URL="postgresql://użytkownik:hasło@localhost:5432/blog"
 ADMIN_EMAIL="admin@example.com"
 ADMIN_PASSWORD="haslo"
 ```
-
 
 
 ```bash
@@ -141,3 +140,24 @@ Sesje przechowywane są w bazie danych, a identyfikator sesji w `httpOnly`
         ├── lib/
         └── main.tsx
 ```
+
+
+### Code review
+
+1.
++ czytlene readme
+- nie jest wyświetlana informacja o błędnym podaniu informacji (logowanie)
++ menu jest ładne i czytelne
++ aktywnie aktualiziją się dodane informacje 
++ informacje pomiędzy wszystkimi urzytkownikami wyświetlają się 
++ handling wylogowywania działa bez problemu 
+- w panelu admina po usunięciu postu urzytkownika dalej pokazuje się błędna ilość postów (zmiane widać dopiero po odświerzeniu)
++ dobrze dodaje się informacje do strony
+
+2.
+- aplikacja wyglada bardzo ladnie, bez zarzutow
+- readme rowniez czytelne, na plus
+- kod czytelny, jedyny drobny szczegol to niektore komponenty React byly nazwane z malej litery, co jest wbrew sposobu zapisu komponentow Reacta, ale bledem samym w sobie nie
+- aplikacja responsywna, rowniez na plus
+
+ogolem aplikacja jest bardzo dobrze napisana, nie mam wiekszych problemow
