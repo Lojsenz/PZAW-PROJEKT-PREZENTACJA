@@ -8,7 +8,6 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "seed": "tsx prisma/seed.ts",
-    "seed:random": "tsx prisma/seed-random.ts",
     "prisma": "prisma studio",
     "env:init": "node -e \"const fs=require('fs');if(!fs.existsSync('.env')){fs.copyFileSync('.env.example','.env');console.log('Created .env from .env.example')}else{console.log('.env already exists, skipping')}\"",
     "db": "prisma migrate dev && prisma generate"
